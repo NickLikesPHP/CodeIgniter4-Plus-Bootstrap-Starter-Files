@@ -12,7 +12,7 @@ Add `html_title` to  your `Config/Autoload.php` to the `$helpers` array.
 
     public $helpers = ['html_title'];
 ## The Rest Of It
-Copy the file into your `app` folder into the respective directorys.
+Copy the file into your `app` and `public` folders into the respective directorys.
 ## Extra - View Example
 
     public function index(): string {
