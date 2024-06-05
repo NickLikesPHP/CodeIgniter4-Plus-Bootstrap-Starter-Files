@@ -13,7 +13,7 @@ if(isset($title)){
 }
 ?>
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" class="vw-100 min-vh-100" data-bs-theme="dark">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,4 +24,4 @@ if(isset($title)){
         <link rel="stylesheet" href="<?= base_url('website-name.css') ?>">
         <?= $this->renderSection('top-head') ?>
     </head>
-<body>
+<body class="vw-100 min-vh-100">
