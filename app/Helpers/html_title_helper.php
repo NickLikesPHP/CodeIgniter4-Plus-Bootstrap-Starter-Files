@@ -2,7 +2,11 @@
 // app/Helpers/html_title_helper.php
 use CodeIgniter\CodeIgniter;
 
-function website_title($page_name = null, ?array $options = null): string {
+function website_title($page_name = null, array $options = null): string {
+    $options['WEBSITE_NAME'] = $options['website_name'] ?? null;
+    $options['WEBSITE_NAME_SEPARATOR'] = $options['seperator'] ?? null;
+    $options['WEBSITE_NAME_POSITION'] = $options['website_name_position'] ?? null;
+    
     $websiteName            = $options['WEBSITE_NAME'] ?? $_ENV['WEBSITE_NAME'];
     $websiteNameSeparator   = $options['WEBSITE_NAME_SEPARATOR'] ?? $_ENV['WEBSITE_NAME_SEPARATOR'];
     $websiteNamePosition    = strtoupper($options['WEBSITE_NAME_POSITION'] ?? $_ENV['WEBSITE_NAME_POSITION']);
