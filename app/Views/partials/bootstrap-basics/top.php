@@ -3,7 +3,7 @@ $title = $title ?? null;
 $title_options = $title_options ?? null;
 ?>
 <!doctype html>
-<html lang="en" class="vw-100 min-vh-100" data-bs-theme="dark">
+<html lang="en" class="vw-100 min-vh-100 <?= $this->renderSection('html-classes') ?>"<?= $this->renderSection('html-attributes') ?> data-bs-theme="dark">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,4 +14,4 @@ $title_options = $title_options ?? null;
         <link rel="stylesheet" href="<?= base_url('website-name.css') ?>">
         <?= $this->renderSection('top-head') ?>
     </head>
-<body class="vw-100 min-vh-100">
+<body class="vw-100 min-vh-100 <?= $this->renderSection('body-classes') ?>"<?= $this->renderSection('body-attributes') ?>>
